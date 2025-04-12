@@ -6,17 +6,49 @@
 
 .container{
    width: 90%;
+   margin: auto;
 }
 .headerNavbar{
    display: flex;
+   height: 95px;
    justify-content: space-between;
    align-items: center;
 }
 
 .menuButton{
    background-color: transparent;
-   border: 1px solid #656567;
-   border-radius: 15px;
+   border: 1px solid #F7F7F8;
+   border-radius: 100px;
    padding: 14px 24px;
    color: #656567;
+   cursor: pointer;
+   font-size: 18px;
+}
+.menuButton:hover{
+   color: #262626;
+   background-color: #F7F7F8;
+   transition: all 1s ease-out;
+}
+.active{
+   background-color: #F7F7F8;
+   color: #262626;
+}
+.headerMenuRight{
+   display: flex;
+   gap: 10px;
+}
+.headerMenuRight{
+   display: flex;
+   gap: 14px;
+}
+
+.shoppingCart{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   width: 52px;
+   height: 52px;
+   background-color: #FFD400;
+   border-radius: 100%
 }
