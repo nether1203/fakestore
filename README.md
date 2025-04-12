@@ -4,3 +4,8 @@ A team project of the Creator IT Academy students, an online store using Fake St
 ## Contributors
 This project was developed by:
 - [**[Marko]**](https://github.com/MarcelloTar) – Frontend development  
+
+
+- [**[Tanya]**](https://github.com/TanzerCIJI) – Frontend development  
+
+
