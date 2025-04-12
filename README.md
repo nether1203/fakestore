@@ -9,4 +9,3 @@ This project was developed by:
 - [**[Maks]**](https://github.com/BONBINOVNCH) – Frontend development (API)  
 - [**[Tanya]**](https://github.com/TanzerCIJI) – Frontend development  
 
-test
