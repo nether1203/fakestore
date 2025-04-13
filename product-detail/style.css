@@ -55,3 +55,147 @@
 }
 
 /* Main */
+
+.main {
+}
+.product_main {
+   display: flex;
+}
+.product_block_left {
+   
+}
+.product_img {
+   width: 38vw;
+   margin-right: 50px;
+}
+.product_block_right {
+}
+.maininfo {
+   display: flex;
+   
+}
+.maininfo_left {
+   
+}
+.maininfo_title {
+   display: flex;
+   align-items: start;
+}
+.title_text {
+   margin-right: 10px;
+   font-size: 18px;
+   margin-bottom: 0;
+}
+.title_rating {
+   display: flex;
+   font-size: 14px;
+}
+.title_rating_img {
+   height: 15px;
+}
+.rating_img{
+   height: 15px;
+}
+.title_rating_number {
+   margin-right: 10px;
+}
+.title_rating_count {
+   display: flex;
+   align-items: center;
+   margin-right: 10px;
+   background-color: #FFE566;
+   padding: 2px 12px 2px 12px;
+   border-radius: 50px;
+   font-weight: 500;
+   color: #262626;
+}
+.title_rating_count span{
+   margin-left: 5px;
+}
+.maininfo_head {
+   margin-top: 6px;
+   font-size: 24px;
+   font-weight: 600;
+}
+.maininfo_name {
+}
+.maininfo_price {
+   font-size: 30px;
+   font-weight: bold;
+}
+.maininfo_right {
+   display: flex;
+}
+.maininfo_buttons {
+}
+.buy {
+}
+.buyButton {
+}
+.add {
+}
+.addButton {
+}
+.info {
+   
+}
+.info_headInfo {
+   display: flex;
+   
+}
+.headInfo_material {
+}
+.material_title {
+}
+.material_info {
+}
+.headInfo_fit {
+}
+.fit_title {
+}
+.fit_info {
+}
+.info_details {
+   display: flex;
+
+}
+.details_color {
+}
+.color_title {
+}
+.color_block {
+}
+.black {
+}
+.arrow {
+}
+.orange {
+}
+.yellow {
+}
+.details_sizes {
+}
+.sizes_title {
+}
+.sizes_buttons {
+}
+.size {
+}
+.shippingInformation {
+}
+.shippingInformation_title {
+}
+.shippingInformation_list {
+}
+.width {
+}
+.description {
+}
+.description_title {
+}
+.description_text {
+}
+
+.grey{
+   color: #656567;
+}
