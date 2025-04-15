@@ -60,6 +60,7 @@
 }
 .product_main {
    display: flex;
+   margin: 80px 84px 80px 84px;
 }
 .product_block_left {
    
@@ -83,7 +84,7 @@
 }
 .title_text {
    margin-right: 10px;
-   font-size: 18px;
+   font-size: 16px;
    margin-bottom: 0;
 }
 .title_rating {
@@ -118,6 +119,8 @@
    font-weight: 600;
 }
 .maininfo_name {
+   font-size: 24px;
+   font-weight: 600;
 }
 .maininfo_price {
    font-size: 30px;
@@ -151,7 +154,7 @@
    
 }
 .add {
-   padding: 14px 28px 14px 28px;
+   padding: 14px 19.5px 14px 19.5px;
    border-radius: 50px;
    background-color: #ffffff;
    font-size: 14px;
@@ -167,49 +170,97 @@
    margin-right: 8px;
 }
 .info {
-   
+   padding: 30px;
+   border: #F1F1F3 1px solid;
+   border-radius: 23px;
+   margin-top: 20px;
 }
 .info_headInfo {
    display: flex;
    
 }
 .headInfo_material {
+   width: 50%;
 }
 .material_title {
+   font-size: 16px;
 }
 .material_info {
+   font-size: 16px;
+   color: #656567;
 }
 .headInfo_fit {
+   width: 50%;
 }
 .fit_title {
+   font-size: 16px;
 }
 .fit_info {
+   font-size: 16px;
+   color: #656567;
 }
 .info_details {
    display: flex;
-
+   justify-content: space-between;
+   
 }
 .details_color {
+   
 }
 .color_title {
+   font-size: 16px;
 }
 .color_block {
+   display: flex;
+   border: #F1F1F3, 1px, solid;
+   padding: 6px 5px 6px 9px;
+   border-radius: 50px;
+}
+.color_block > div {
+   width: 20px;
+   height: 20px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 4px;
+}
+.color_block {
+
 }
 .black {
+   background-color: black;
 }
 .arrow {
+   display: none;
 }
 .orange {
+   background-color: orange;
 }
 .yellow {
+   background-color: #FFD400;
 }
 .details_sizes {
+   width: 50%;
 }
 .sizes_title {
+   font-size: 16px;
 }
 .sizes_buttons {
+
 }
 .size {
+   width: 34px;
+   height: 34px;
+   font-size: 14px;
+   border: #F1F1F3, 1px, solid;
+   background-color: #F7F7F8;
+   border-radius: 3px;
+}
+.size:hover{
+   background-color: #262626;
+   color: white;
+   transition: 0.2s ease;
 }
 .shippingInformation {
 }
