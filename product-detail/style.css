@@ -56,26 +56,16 @@
 
 /* Main */
 
-.main {
-}
 .product_main {
    display: flex;
    margin: 80px 84px 80px 84px;
-}
-.product_block_left {
-   
 }
 .product_img {
    width: 38vw;
    margin-right: 50px;
 }
-.product_block_right {
-}
 .maininfo {
    display: flex;
-   
-}
-.maininfo_left {
    
 }
 .maininfo_title {
@@ -217,9 +207,6 @@
    justify-content: space-between;
    
 }
-.details_color {
-   
-}
 .color_title {
    font-size: 16px;
 }
@@ -237,9 +224,6 @@
    justify-content: center;
    align-items: center;
    margin-right: 4px;
-}
-.color_block {
-
 }
 .black {
    background-color: black;
@@ -299,8 +283,6 @@
 }
 .shippingInformation_list span {
    color: black;
-}
-.width {
 }
 .description {
    padding: 30px;
