@@ -96,6 +96,8 @@
 }
 .rating_img{
    height: 15px;
+   align-self: self-start;
+   margin-right: 3px;
 }
 .title_rating_number {
    margin-right: 10px;
@@ -178,7 +180,7 @@
    height: 21px;
    width: 21px;
    margin-top: -7px;
-   margin-right: 8px;
+   
 }
 .info {
    padding: 30px;
@@ -256,9 +258,11 @@
 }
 .sizes_title {
    font-size: 16px;
+   margin-bottom: 0px;
 }
 .sizes_buttons {
-
+   display: flex;
+   flex-wrap: wrap;
 }
 .size {
    width: 34px;
@@ -267,6 +271,7 @@
    border: #F1F1F3, 1px, solid;
    background-color: #F7F7F8;
    border-radius: 3px;
+   margin: 6px 5px 0px 0px;
 }
 .size:hover{
    background-color: #262626;
@@ -316,3 +321,50 @@
 .grey{
    color: #656567;
 }
+
+@media screen and (max-width: 995px) {
+   .product_main{
+      display: block;
+      margin: 16px;
+   }
+   .product_img {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 40px;
+   }
+   .title_rating{
+      font-size: 12px;
+   }
+   .headerMenuRight{
+      display: none;
+   }
+   .maininfo{
+      display: block;
+   }
+   .maininfo_head{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+   }
+   .maininfo_name{
+      font-size: 18px;
+   }
+   .maininfo_price{
+      font-size: 22px;
+   }
+   .maininfo_buttons{
+      justify-content: space-evenly;
+   }
+   .buy{
+      margin-right: 0;
+   }
+   .font14{
+      font-size: 14px;
+   }
+   .info{
+      padding: 20px;
+   }
+   .font14  li{
+      font-size: 14px;
+   }
+ }
