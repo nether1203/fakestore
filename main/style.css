@@ -86,6 +86,12 @@
     color: #444;
     font-size: 15px;
   }
+  .img_text{
+    display: flex;
+    justify-content:end ;
+    align-items: end;
+        margin-left: 250px;
+    }
   
   .btn {
     background-color: #FFD700;
