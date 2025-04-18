@@ -55,3 +55,45 @@
 }
 
 /* Main */
+
+.btn{
+ padding: 12px 40px;
+ border: none;
+ border-radius: 25px;
+ cursor: pointer;
+ font-size: 16px;
+}
+
+.btn.yellow{
+ background-color: #fdd835;
+ color: #000;
+}
+
+.products{
+   padding: 60px 50px;
+}
+
+.products-filters{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 20px 0;
+}
+
+.product-tags .tag{
+ background-color: #eee;
+ padding: 8px 16px;
+ border-radius: 20px;
+ margin-left: 10px;
+ cursor: pointer;
+}
+
+.tag.active .products-filters button {
+   background: none;
+   border: none;
+   cursor: pointer;
+   padding: 10px 20px;
+   font-size: 20px;
+}
+
+
