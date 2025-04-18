@@ -57,63 +57,70 @@
     max-width: 1200px;
     margin: auto;
     padding: 40px 20px;
+    position: relative;
   }
   
-  .testimonials-section .header {
-    text-align: center;
-    margin-bottom: 40px;
+  .headerr {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
   }
   
-  .testimonials-section h2 {
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 5px;
+  .headerr h2 {
+    font-size: 28px;
+    font-weight: 700;
   }
   
   .subheading {
     color: gray;
     font-size: 14px;
-    display: block;
-    margin-bottom: 15px;
-    text-transform: uppercase;
+    margin-left: 10px;
+    font-weight: 400;
   }
   
-  .testimonials-section p {
+  .headerr p {
     max-width: 600px;
-    margin: auto;
     color: #444;
+    font-size: 15px;
   }
   
   .btn {
-    display: inline-block;
-    margin-top: 20px;
     background-color: #FFD700;
     color: #000;
     padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
+    white-space: nowrap;
   }
   
-  .testimonials {
+  .carousel {
     display: flex;
     gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    padding-top: 40px;
+    scroll-behavior: smooth;
   }
   
   .testimonial-card {
-    background: #f9f9f9;
-    border-radius: 10px;
+    background: #fff;
+    border-radius: 16px;
     padding: 20px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
+    min-width: 320px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: relative;
   }
   
-  .testimonial-card:hover {
-    transform: translateY(-5px);
-  }
+  /* .quote-mark img {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    color: #FFD700;
+  } */
   
   .profile {
     text-align: center;
@@ -122,20 +129,36 @@
   
   .profile img {
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
   }
   
   .profile strong {
     display: block;
     margin-top: 8px;
+    font-weight: bold;
   }
   
   .stars {
     color: #f5c518;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 5px;
   }
   
-
+  .arrow-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000;
+    color: #fff;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+  }
 /* Main */
