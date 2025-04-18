@@ -36,11 +36,113 @@
    </div>
    <hr class="line">
    <div class="container">
-      <main class="main"></main>
+      <main class="main">
+         <!-- Все що має id="dynamic" буде мінятися з API, все інше статичне -->
+         <div class="product_main">
+
+            <div class="product_block_left">
+               <img id="dynamic" class="product_img" src="../src/img/hoodie.png" alt="">
+            </div>
+
+            <div class="product_block_right">
+
+               <div class="maininfo">
+
+                  <div class="maininfo_left">
+                     <div class="maininfo_title grey">
+                        <p id="dynamic" class="title_text font14">Men's Casual Outerwear</p>
+                        <div class="title_rating">
+                           <div class="title_rating_img"><img class="rating_img" src="../src/img/star.png" alt=""></div>
+                           <div id="dynamic" class="title_rating_number">3.9</div>
+                           <div class="title_rating_count">Count <span class="count" id="dynamic">120</span></div>
+                        </div>
+                     </div>
+
+                     <div class="maininfo_head">
+                        <div class="maininfo_name" id="dynamic">Urban Explorer Denim Jacket</div>
+                        <div class="maininfo_price" id="dynamic">120$</div>
+                     </div>
+                     
+
+                  </div>
+                  <div class="maininfo_right">
+                     <div class="maininfo_buttons">
+                        <button class="buy">
+                           <img src="../src/img/Subtract.png" alt="" class="buyButton">
+                           Buy Now
+                        </button>
+                        <button class="add">
+                           <img src="../src/img/Union.png" alt="" class="addButton">
+                           Add To Cart
+                        </button>
+                     </div>
+                  </div>
+
+               </div>
+
+               <div class="info">
+
+                  <div class="info_headInfo">
+                     <div class="headInfo_material">
+                        <h5 class="material_title font14">Material</h5>
+                        <p class="material_info font14" id="dynamic">High-Quality Denim (100% Cotton)</p>
+                     </div>
+                     <div class="headInfo_fit">
+                        <h5 class="fit_title font14">Fit</h5>
+                        <p class="fit_info font14" id="dynamic">Classic Fit</p>
+                     </div>
+                  </div>
+
+                  <div class="info_details">
+                     <div class="details_color">
+                        <h5 class="color_title font14">Color</h5>
+                        <div class="color_block" id="dynamic">
+                           <div class="black">
+                              <img src="../src/img/arrow.png" alt="" class="arrow">
+                           </div>
+                           <div class="orange">
+                              <img src="../src/img/arrow.png" alt="" class="arrow">
+                           </div>
+                           <div class="yellow">
+                              <img src="../src/img/arrow.png" alt="" class="arrow">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="details_sizes">
+                        <h5 class="sizes_title font14">Sizes</h5>
+                        <div class="sizes_buttons">
+                           <button class="size">S</button>
+                           <button class="size">M</button>
+                           <button class="size">L</button>
+                           <button class="size">XL</button>
+                           <button class="size">XXL</button>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+
+               <div class="shippingInformation">
+                  <h4 class="shippingInformation_title">Shipping Information</h4>
+                  <ul class="shippingInformation_list font14" id="dynamic">
+                     <li>Standard shipping: <span class="width">3-5 business days</span></li>
+                     <li>Express shipping options available at checkout</li>
+                  </ul>
+               </div>
+
+               <div class="description">
+                  <h4 class="description_title">Description</h4>
+                     <p id="dynamic" class="description_text font14">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique sit ipsa expedita earum atque et esse exercitationem, reprehenderit non voluptates. Rem assumenda harum distinctio alias unde, a odit illum at!</p>
+               </div>
+
+            </div>
+         </div>
+
+      </main>
       <footer class="footer">
 
       </footer>
    </div>
-   <script src="./script.js"></script>
+   
 </body>
 </html>
