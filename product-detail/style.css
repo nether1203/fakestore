@@ -63,6 +63,7 @@
 .product_img {
    width: 38vw;
    margin-right: 50px;
+   max-height: 700px;
 }
 .maininfo {
    display: flex;
