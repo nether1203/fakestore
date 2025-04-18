@@ -61,7 +61,7 @@
    margin: 80px 84px 80px 84px;
 }
 .product_img {
-   width: 38vw;
+   max-width: 38vw;
    margin-right: 50px;
    max-height: 700px;
 }
@@ -311,6 +311,7 @@
       margin: 16px;
    }
    .product_img {
+      max-width: none;
       width: 100%;
       margin-right: 0;
       margin-bottom: 40px;

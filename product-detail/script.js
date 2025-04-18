@@ -15,6 +15,19 @@ fetch(`https://fakestoreapi.com/products/${id}`)
     console.log(img)
 
     img.setAttribute("src", data.image)
+
+    function changeText(block, someData) {
+        block.innerHTML = `
+            ${someData}
+        `
+    }
+
+    const title = document.querySelector(".title_text")
+    changeText(title, data.title)
+    const price = document.querySelector(".maininfo_price")
+    changeText(price, data.price)
+    const description = document.querySelector(".description_text")
+    changeText(description, data.description)
 });
 
 
