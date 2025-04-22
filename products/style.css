@@ -9,6 +9,9 @@
    width: 90%;
    margin: auto;
 }
+.main{
+   margin-top: 167px;
+}
 .headerNavbar{
    display: flex;
    height: 95px;
@@ -57,7 +60,9 @@
 .container2{
    /* margin: 0 92px; */
 }
-
+a{
+   text-decoration: none;
+}
 .headerContainer{
    display: flex;
    align-items: center;
@@ -78,7 +83,6 @@
 .Discover {
    display: flex;
    margin-bottom: 36px;
-   width: max-content;
 }
 
 .Discover h1{
@@ -95,8 +99,10 @@
    margin-top: 10px;
    width: max-content;
 }
-
-.headerRightContainer:not(:last-child) {
+.headerRightContainer{
+   display: flex;   
+}
+.headerRightBox:not(:last-child) {
    margin-right: 60px;
 }
 .headerRightContainerHeader {
@@ -113,8 +119,51 @@
    line-height: 21px;
 }
 
+.filterBox {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   margin-bottom: 80px;
+}
+.filterBtn {
+   border: none;
+   color: #4c4c4d;
+   font-size: 18px;
+   font-weight: 500;
+   text-transform: uppercase;
+   border-radius: 100px;
+   padding: 0 20px;
+   background-color: #f7f7f8;
+   cursor: pointer;
+   transition: background-color 500ms;
+   height: 53px;
+}
+.filterBtn:hover:not(.activeFilter){
+   background-color: #d3d3d6;
+}
+.activeFilter {
+   color: #262626;
+   font-weight: 600;
+   background-color: #ffd400;
+}
+
+#select{
+   margin-left: 10px;
+   padding-left: 5px;
+}
+
+.filterBoxMedia{
+   display: none;
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 1490px) {
-   .headerRightContainer:not(:last-child) {
+   .headerRightBox:not(:last-child) {
       margin-right: 30px;
    }
 }
@@ -151,45 +200,78 @@
       width: 50%;
    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-.filterBox {
-   display: flex;
-   justify-content: center;
-   gap: 10px;
-   margin-bottom: 80px;
+@media screen and (max-width: 1047px) {
+   .headerRightContainerHeader{
+      width: 105%;
+   }
 }
-.filterBtn {
-   border: none;
-   color: #4c4c4d;
-   font-size: 18px;
-   font-weight: 500;
-   text-transform: uppercase;
-   border-radius: 100px;
-   padding: 0 20px;
-   background-color: #f7f7f8;
-   cursor: pointer;
-   transition: background-color 500ms;
-   height: 53px;
+@media screen and (max-width: 985px) {
+   .headerContainer{
+      display: block;
+   }
+   .headerLeft{
+      margin-right: 0px;
+      margin-bottom: 30px;
+      width: 100%;
+   }
 }
-.filterBtn:hover:not(.activeFilter){
-   background-color: #d3d3d6;
+@media screen and (max-width: 627px) {
+   .filterBtn{
+      display: none;
+   }
+   .filterBoxMedia{
+      display: flex;
+   }
 }
-.activeFilter {
-   color: #262626;
-   font-weight: 600;
-   background-color: #ffd400;
+@media screen and (max-width: 502px) {
+   .headerRightContainerHeader{
+      font-size: 16px;
+   }
+   .headerRightBox:not(:last-child){
+      margin-right: 20px;
+   }
 }
+@media screen and (max-width: 433px) {
+   .headerRightContainer{
+      flex-wrap: wrap;
+   }
+   .headerRightBox:first-child{
+      margin-bottom: 15px;
+   }
+}
+@media screen and (max-width: 425px) {
+   .Discover{
+      flex-direction: column-reverse;
+   }
+   .Discover h1{
+      font-size: 28px;
+   }
+   .Discover p{
+      margin-top: 0px;
+   }
+}
+@media screen and (max-width: 366px) {
+   .headerRightBox:nth-child(2){
+      margin-bottom: 15px;
+   }
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .productContainer h2{
    color: #333;
@@ -198,35 +280,68 @@
    line-height: 36px;
 }
 
-.productContentTop img{
-   width: 376px;
-   height: 317px;
+.description{
+   color: #656567;
+   font-size: 18px;
+   line-height: 27px;
+   margin-bottom: 50px;
 }
+
+.productContainer:not(:last-child){
+   margin-bottom: 80px;
+}
+
 .productBox{
    display: flex;
    justify-content: center;
-   gap: 30px;
+   gap: 50px;
 }
 .productImg {
+   width: 376px;
+   height: 317px;
 }
 .basket {
    position: absolute;
    left: 80%;
-   top: 72%;
+   top: 80%;
+   min-width: 56px;
 }
 .productContent{
    position: relative;
    /* border: 1px solid #1a1a1a; */
+   width: 390px;
+   height: 409px;
 }
 .productContentBotton h3{
    color: #262626;
    font-size: 20px;
    font-weight: 600;
    line-height: 30px;
+   width: 75%;
+   height: 60px;
 }
 .productContentBotton p{
    color: #262626;
    font-size: 18px;
    font-weight: 600;
    line-height: 27px;
+}
+
+ @media screen and (max-width: 1440px) {
+   .productImg{
+      width: 275px;
+   }
+   .productContent{
+      height: 465px;
+      
+   }
+   .productContentBotton h3{
+      height: 100px;
+   }
+}
+
+@media screen and (max-width: 1420px) {
+   .productBox{
+      gap: 19px;
+   }
 }
