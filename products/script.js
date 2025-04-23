@@ -12,7 +12,7 @@ fetch('https://fakestoreapi.com/products')
     data.forEach(item => {
         if (item.category == "men's clothing") {
             productBox.innerHTML += `
-            <a href="http://127.0.0.1:5500/product-detail/index.html?id=${item.id}" class="productContent">
+            <a href="/product-detail/index.html?id=${item.id}" class="productContent">
                 <div >
                     <div class="productContentTop">
                         <img src="${item.image}" alt="" class="productImg">
