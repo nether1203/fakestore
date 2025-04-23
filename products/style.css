@@ -268,12 +268,15 @@ a{
 
 
 
+.sliderContainer{
+   overflow: hidden;
+   margin-bottom: 50px;
+}
 
 
 
 
-
-.productContainer h2{
+.sliderItem h2{
    color: #333;
    font-size: 24px;
    font-weight: 600;
@@ -291,13 +294,18 @@ a{
    margin-bottom: 80px;
 }
 
-.productBox{
-   display: flex;
-   justify-content: center;
-   gap: 50px;
+.cliderTrack{
+  display: flex;
+   /*  justify-content: center;
+   gap: 50px; */
+   gap: 10px;
+   transition: 2s;
+
+
+
 }
 .productImg {
-   width: 376px;
+   /* width: 376px; */
    height: 317px;
 }
 .basket {
@@ -306,11 +314,11 @@ a{
    top: 80%;
    min-width: 56px;
 }
-.productContent{
+.sliderItem{
    position: relative;
    /* border: 1px solid #1a1a1a; */
-   width: 390px;
-   height: 409px;
+   /* min-width: 390px; */
+   height: 459px;
 }
 .productContentBotton h3{
    color: #262626;
@@ -318,7 +326,7 @@ a{
    font-weight: 600;
    line-height: 30px;
    width: 75%;
-   height: 60px;
+   height: 100px;
 }
 .productContentBotton p{
    color: #262626;
@@ -327,7 +335,7 @@ a{
    line-height: 27px;
 }
 
- @media screen and (max-width: 1440px) {
+ /* @media screen and (max-width: 1440px) {
    .productImg{
       width: 275px;
    }
@@ -344,4 +352,4 @@ a{
    .productBox{
       gap: 19px;
    }
-}
+} */
