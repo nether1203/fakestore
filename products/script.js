@@ -30,7 +30,7 @@ fetch('https://fakestoreapi.com/products')
             </a>
             
             `
-        } /*else if (item.category == "jewelery") {
+        } else if (item.category == "jewelery") {
             jewelery.innerHTML += `
             <a href="/product-detail/index.html?id=${item.id}" class="productContent">
                 <div >
@@ -62,7 +62,7 @@ fetch('https://fakestoreapi.com/products')
             </a>
             
             ` 
-        }*/
+        }
             
         
     });

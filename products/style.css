@@ -326,6 +326,9 @@ a{
    font-weight: 600;
    line-height: 27px;
 }
+.womensClothing{
+   overflow: hidden;
+}
 
  @media screen and (max-width: 1440px) {
    .productImg{
