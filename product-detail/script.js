@@ -35,6 +35,10 @@ fetch(`https://fakestoreapi.com/products/${id}`)
     changeText(description, data.description)
     const category = document.querySelector(".title_text")
     changeText(category, data.category)
+    const rating = document.querySelector(".title_rating_number")
+    changeText(rating, data.rating.rate)
+    const count = document.querySelector(".count")
+    changeText(count, data.rating.count)
 });
 
 
