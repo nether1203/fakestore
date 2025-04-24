@@ -1,5 +1,5 @@
 
-const cliderTrack = document.querySelector('.cliderTrack');
+const cliderTrack = document.querySelector('.swiper-wrapper');
 
 fetch('https://fakestoreapi.com/products')
   .then(response => response.json())
@@ -12,7 +12,7 @@ fetch('https://fakestoreapi.com/products')
     data.forEach(item => {
         if (item.category == "women's clothing") {
             cliderTrack.innerHTML += `
-            <a href="http://127.0.0.1:5500/product-detail/index.html?id=${item.id}" class="sliderItem">
+            <div href="http://127.0.0.1:5500/product-detail/index.html?id=${item.id}" class="sliderItem swiper-slide">
                 <div >
                     <div class="productContentTop">
                         <img src="${item.image}" alt="" class="productImg">
@@ -23,61 +23,41 @@ fetch('https://fakestoreapi.com/products')
                         <p>$${item.price}</p>
                     </div>
                 </div>
-            </a>
+            </div>
             
             `
         } 
     });
 
-    const width = screen.width
-
-    let position = 0;
-    const sliderToShow = 4;
-    const sliderToScroll = 1;
-    const container = document.querySelector('.sliderContainer');
-    const track = document.querySelector('.cliderTrack');
-    const items = document.querySelectorAll('.sliderItem');
-    const btnPrew = document.querySelector('.prew');
-    const btnNext = document.querySelector('.next');
-    const itemCount = items.length
-    const itemWidth = container.clientWidth / sliderToShow;
-    const movePosition = sliderToScroll * itemWidth;
-    // console.log(itemWidth);
     
-    items.forEach((item) =>{
-        item.style.minWidth = `${itemWidth}px`
-    });
 
-    btnNext.addEventListener('click', () => {
-        const itemLeft = itemCount - (Math.abs(position) + sliderToShow * itemWidth) / itemWidth;
-
-        position -= itemLeft >= sliderToScroll ? movePosition : itemLeft * itemWidth;
-
-        setPosition();
-        checkBtns();
-    })
-
-    btnPrew.addEventListener('click', () => {
-        const itemLeft = itemCount - Math.abs(position) / itemWidth;
-
-        position += itemLeft >= sliderToScroll ? movePosition : itemLeft * itemWidth;
-
-        setPosition();
-        checkBtns();
-    })
-
-    const setPosition = () => {
-        track.style.transform = `translateX(${position}px)`
-    }
-
-    const checkBtns = () => {
-        btnPrew.disabled = position === 0;
-        btnNext.disabled = position <= -(itemCount - sliderToShow) * itemWidth
-    }
+    
 
 
     
 
 
   }
+  let swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      1441: {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      }
+    },
+  });
   
