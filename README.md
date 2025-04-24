@@ -15,8 +15,8 @@ This project was developed by:
 
 ## Main page 
 Autor: **[Name]**
-## Description: Головна стоінка інтернет магазину
-### What to do:
+Description: Головна стоінка інтернет магазину
+### What was done:
 - Header
 - Slider
 - Footer
