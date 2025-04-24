@@ -345,3 +345,9 @@ a{
       gap: 19px;
    }
 }
+
+@media screen and (max-width: 1200px) {
+   .productBox{
+      flex-wrap: wrap;
+   }
+}
