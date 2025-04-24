@@ -61,8 +61,9 @@
    margin: 80px 84px 80px 84px;
 }
 .product_img {
-   width: 38vw;
+   max-width: 38vw;
    margin-right: 50px;
+   max-height: 700px;
 }
 .maininfo {
    display: flex;
@@ -76,6 +77,7 @@
    margin-right: 10px;
    font-size: 16px;
    margin-bottom: 0;
+   text-transform: capitalize;
 }
 .title_rating {
    display: flex;
@@ -310,6 +312,8 @@
       margin: 16px;
    }
    .product_img {
+      max-width: none;
+      max-height: none;
       width: 100%;
       margin-right: 0;
       margin-bottom: 40px;
