@@ -10,3 +10,16 @@ This project was developed by:
 - [**[Tanya]**](https://github.com/TanzerCIJI) – Frontend development  
 - [**[Maksym]**](https://github.com/MaksimKopis) – Frontend development 
 
+
+# Pages
+
+## Main page 
+Autor: **[Name]**
+Description: Головна стоінка інтернет магазину
+### What was done:
+- Header
+- Slider
+- Footer
+- Api resive data
+
+
