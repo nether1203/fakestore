@@ -11,3 +11,17 @@ This project was developed by:
 - [**[Maksym]**](https://github.com/MaksimKopis) – Frontend development 
 - [**[Nazar]**](https://github.com/nether1203) – Frontend development 
 
+
+# Pages
+
+## Main page 
+Autor: **[Name]**
+Description: Головна стоінка інтернет магазину
+### What was done:
+- Header
+- Slider
+- Footer
+- Api resive data
+
+
+
