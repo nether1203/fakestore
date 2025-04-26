@@ -1,4 +1,10 @@
 
+const width = screen.width
+console.log(width);
+
+const cliderTrack = document.querySelectorAll('.cliderTrack');
+
+const swiperWrapper = document.querySelectorAll('.swiper-wrapper');
 const productBox = document.querySelector('.productBox');
 const jewelery = document.querySelector('.jewelery');
 const mensClothing = document.querySelector('.mensClothing');
@@ -19,8 +25,9 @@ fetch('https://fakestoreapi.com/products')
   function products(data){
     data.forEach(item => {
         if (item.category == "men's clothing") {
-            mensClothing.innerHTML += `
-            <a href="/product-detail/index.html?id=${item.id}" class="productContent">
+          if (width <= 1440) {
+            swiperWrapper[0].innerHTML += `
+            <a href="/product-detail/index.html?id=${item.id}" class="swiper-slide">
                 <div >
                     <div class="productContentTop">
                         <img src="${item.image}" alt="" class="productImg">
@@ -32,11 +39,10 @@ fetch('https://fakestoreapi.com/products')
                     </div>
                 </div>
             </a>
-            
             `
-        } else if (item.category == "jewelery") {
-            jewelery.innerHTML += `
-            <a href="/product-detail/index.html?id=${item.id}" class="productContent">
+          } else {
+            cliderTrack[0].innerHTML += `
+            <a href="/product-detail/index.html?id=${item.id}" class="sliderItem">
                 <div >
                     <div class="productContentTop">
                         <img src="${item.image}" alt="" class="productImg">
@@ -48,14 +54,46 @@ fetch('https://fakestoreapi.com/products')
                     </div>
                 </div>
             </a>
-            
             `
+          }
+        } else if(item.category == "jewelery") {
+          if (width <= 1440) {
+            swiperWrapper[1].innerHTML += `
+            <a href="/product-detail/index.html?id=${item.id}" class="swiper-slide">
+                <div >
+                    <div class="productContentTop">
+                        <img src="${item.image}" alt="" class="productImg jeweleryImg">
+                    </div>
+                    <img src="../src/img/Button.png" alt="" class="basket">
+                    <div class="productContentBotton">
+                        <h3>${item.title}</h3>
+                        <p>$${item.price}</p>
+                    </div>
+                </div>
+            </a>
+            `
+          } else {
+            cliderTrack[1].innerHTML += `
+            <a href="/product-detail/index.html?id=${item.id}" class="sliderItem">
+                <div>
+                    <div class="productContentTop">
+                        <img src="${item.image}" alt="" class="productImg jeweleryImg">
+                    </div>
+                    <img src="../src/img/Button.png" alt="" class="basket">
+                    <div class="productContentBotton">
+                        <h3>${item.title}</h3>
+                        <p>$${item.price}</p>
+                    </div>
+                </div>
+            </a>
+            `
+          }
         } else if (item.category == "women's clothing") {
-            womensClothing.innerHTML += `
-            <a href="/product-detail/index.html?id=${item.id}" class="productContent">
+          swiperWrapper[2].innerHTML += `
+            <a href="/product-detail/index.html?id=${item.id}" class="swiper-slide">
                 <div >
                     <div class="productContentTop">
-                        <img src="${item.image}" alt="" class="productImg">
+                        <img src="${item.image}" alt="" class="productImg jeweleryImg">
                     </div>
                     <img src="../src/img/Button.png" alt="" class="basket">
                     <div class="productContentBotton">
@@ -64,6 +102,93 @@ fetch('https://fakestoreapi.com/products')
                     </div>
                 </div>
             </a>
+            `
+        }
+    });
+
+
+    
+  }
+  let swiper1 = new Swiper(".mySwiper1", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper1-next",
+      prevEl: ".swiper1-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: false,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1050: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      1441: {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      }
+    },
+  });
+  let swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper2-next",
+      prevEl: ".swiper2-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: false,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1050: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      1441: {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      }
+    },
+  });
+
+  let swiper3 = new Swiper(".mySwiper3", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper3-next",
+      prevEl: ".swiper3-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: false,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1050: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      1441: {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      }
+    },
+  });
+
             
             ` 
         }
