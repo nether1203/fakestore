@@ -67,6 +67,137 @@
    background-color: #FFD400;
    border-radius: 100%
 }
+.containerr {
+    height:100px;
+    width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+    position: relative;
+  }
+  
+  .headerr {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .headerr h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .subheading {
+    color: gray;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 400;
+   
+  }
+  
+  .headerr p {
+    max-width: 800px;
+    color: #444;
+    font-size: 15px;
+  }
+  .img_text{
+    display: flex;
+    justify-content:end ;
+    align-items: end;
+        
+    }
+  
+  .btn {
+    background-color: #FFD700;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    
+  }
+  
+  .carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-top: 40px;
+    scroll-behavior: smooth;
+    margin-top: 100px;
+  }
+  
+  .testimonial-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    min-width: 320px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: relative;
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .fuul_questiens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .human_foto {
+    display: flex;
+    align-items: center;
+  }
+  
+  .human_text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+  }
+  
+  .human_text h4 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .stars {
+    color: #f5c518; /* Золотистий колір */
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .human img.fotoo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #fce48e; /* Легкий жовтий фон */
+    padding: 5px;
+  }
+  
+  .lapku {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .lapku img.img_text {
+    width: 100%;
+    height: auto;
+  }
+  
+  .review-text {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+  }
+  
 
  .logo {
    max-width: 120px;
