@@ -8,4 +8,18 @@ This project was developed by:
 - [**[Marko]**](https://github.com/MarcelloTar) – Frontend development  
 - [**[Maks]**](https://github.com/BONBINOVNCH) – Frontend development (API)  
 - [**[Tanya]**](https://github.com/TanzerCIJI) – Frontend development  
+- [**[Maksym]**](https://github.com/MaksimKopis) – Frontend development 
 - [**[Nazar]**](https://github.com/nether1203) - Frontend development
+
+# Pages
+
+## Main page 
+Autor: **[Name]**
+Description: Головна стоінка інтернет магазину
+### What was done:
+- Header
+- Slider
+- Footer
+- Api resive data
+
+

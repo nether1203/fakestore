@@ -4,7 +4,7 @@
    box-sizing: border-box;
    font-family: "Manrope", sans-serif;
 }
-
+/* Header */
 .container{
    width: 90%;
    margin: auto;
@@ -53,3 +53,5 @@
    background-color: #FFD400;
    border-radius: 100%
 }
+
+/* Main */
