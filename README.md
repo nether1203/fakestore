@@ -23,3 +23,8 @@ Description: Головна стоінка інтернет магазину
 - Api resive data
 
 
+## Main page (Question Box)
+Autor: **[Maksym]**
+Description: Головна стоінка інтернет магазину
+### What was done:
+Я зробив блок з запитанням. Де ви можете задати запитання!
