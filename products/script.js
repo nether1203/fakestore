@@ -5,6 +5,15 @@ console.log(width);
 const cliderTrack = document.querySelectorAll('.cliderTrack');
 
 const swiperWrapper = document.querySelectorAll('.swiper-wrapper');
+const productBox = document.querySelector('.productBox');
+const jewelery = document.querySelector('.jewelery');
+const mensClothing = document.querySelector('.mensClothing');
+const electronics = document.querySelector('.electronics');
+const womensClothing = document.querySelector('.womensClothing');
+const productContent = document.querySelectorAll('.productContainer');
+
+const filterBtn = document.querySelectorAll('.filterBtn');
+const select = document.querySelector('#select');
 
 fetch('https://fakestoreapi.com/products')
   .then(response => response.json())
@@ -180,5 +189,43 @@ fetch('https://fakestoreapi.com/products')
     },
   });
 
-  
-  
+            
+            ` 
+        }
+            
+        
+    });
+
+    let product
+    document.querySelectorAll('[data-product]').forEach((name) =>{
+        name.addEventListener('click', function () {
+          product = name.getAttribute('data-product')
+          console.log(product);
+          filters(product)
+        })
+    })
+
+    select.addEventListener('change', () => {
+      filters(select.value)
+    })
+
+    function filters(product) {
+      if (product == 'all') {
+        for (let i = 0; i < productContent.length; i++) {
+          productContent[i].classList.remove('none')
+        }
+      } else {
+        for (let i = 0; i < productContent.length; i++) {
+          productContent[i].classList.add('none')
+        }
+        document.querySelector(`.${product}`).classList.remove('none')
+      }
+      filterBtn.forEach((item) =>{
+        item.classList.remove('activeFilter')
+        item.addEventListener('click', () =>{
+          item.classList.add('activeFilter')
+        })
+      })
+    }
+  }
+

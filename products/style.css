@@ -335,6 +335,13 @@ a{
    font-weight: 600;
    line-height: 27px;
 }
+.womensClothing{
+   overflow: hidden;
+}
+
+.none{
+   display: none;
+}
 
 .swiper{
    margin-bottom: 40px;
@@ -456,4 +463,10 @@ a{
    .swiper-button-next::after, .swiper-button-prev::after{
      font-size: 15px;
    }   
+}
+
+@media screen and (max-width: 1200px) {
+   .productBox{
+      flex-wrap: wrap;
+   }
 }

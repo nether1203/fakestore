@@ -63,30 +63,29 @@
                </div>
             </div>
             <div class="filterBox">
-               <button class="filterBtn">all</button>
-               <button class="filterBtn activeFilter">Men’s wear</button>
-               <button class="filterBtn">Women’s wear</button>
-               <button class="filterBtn">Kid’s wear</button>
+               <button class="filterBtn activeFilter" data-product="all">all</button>
+               <button class="filterBtn" data-product="mensClothingBox">Men’s wear</button>
+               <button class="filterBtn" data-product="womensClothingBox">Women’s wear</button>
+               <button class="filterBtn" data-product="jeweleryBox">jewelery</button>
                <div class="filterBoxMedia">
                   <h2>Filter:</h2>
                   <select name="" id="select">
-                     <option value="">All</option>
-                     <option value="">Men’s wear</option>
-                     <option value="">Women’s wear</option>
-                     <option value="">Kid’s wear</option>
+                     <option value="all">All</option>
+                     <option value="mensClothingBox">Men’s wear</option>
+                     <option value="womensClothingBox">Women’s wear</option>
+                     <option value="jeweleryBox">jewelery</option>
                   </select>
                </div>
             </div>
             <div class="productsContainer" >
-               <div class="productContainer">
+               <div class="productContainer mensClothingBox">
                   <h2>men's clothing</h2>
                   <p class="description">Discover our versatile men's casual wear collection, where comfort meets contemporary fashion.</p>
                   <div class="swiper mySwiper1">
                      <div class="swiper-wrapper">
-                        
+               
                      </div>
                      <div class="swiper-pagination" style="visibility: hidden;"></div>
-                  </div>
                   <div class="swiperButtonBox">
                      <button class="swiper-button-prev swiper1-prev swiperButton"></button>
                      <button class="swiper-button-next swiper1-next swiperButton"></button>
