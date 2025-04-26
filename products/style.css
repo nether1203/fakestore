@@ -330,6 +330,10 @@ a{
    overflow: hidden;
 }
 
+.none{
+   display: none;
+}
+
  @media screen and (max-width: 1440px) {
    .productImg{
       width: 275px;
