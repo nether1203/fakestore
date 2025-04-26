@@ -54,7 +54,8 @@
    border-radius: 100%
 }
 .containerr {
-    max-width: 1200px;
+    height:100px;
+    width: 1100px;
     margin: auto;
     padding: 40px 20px;
     position: relative;
@@ -72,6 +73,7 @@
   .headerr h2 {
     font-size: 28px;
     font-weight: 700;
+    margin-bottom: 30px;
   }
   
   .subheading {
@@ -79,10 +81,11 @@
     font-size: 14px;
     margin-left: 10px;
     font-weight: 400;
+   
   }
   
   .headerr p {
-    max-width: 600px;
+    max-width: 800px;
     color: #444;
     font-size: 15px;
   }
@@ -90,7 +93,7 @@
     display: flex;
     justify-content:end ;
     align-items: end;
-        margin-left: 250px;
+        
     }
   
   .btn {
@@ -99,8 +102,7 @@
     padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;
-    font-weight: bold;
-    white-space: nowrap;
+    
   }
   
   .carousel {
@@ -109,6 +111,7 @@
     overflow-x: auto;
     padding-top: 40px;
     scroll-behavior: smooth;
+    margin-top: 100px;
   }
   
   .testimonial-card {
@@ -120,45 +123,66 @@
     position: relative;
   }
   
-
-  
   .profile {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 15px;
   }
   
-  /* .profile img {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-  } */
+  .fuul_questiens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   
-  .profile strong {
-    display: block;
-    margin-top: 8px;
+  .human_foto {
+    display: flex;
+    align-items: center;
+  }
+  
+  .human_text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+  }
+  
+  .human_text h4 {
+    margin: 0;
     font-weight: bold;
+    font-size: 16px;
   }
   
   .stars {
-    color: #f5c518;
+    color: #f5c518; /* Золотистий колір */
     font-size: 16px;
     margin-top: 5px;
   }
   
-  .arrow-right {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #000;
-    color: #fff;
-    font-size: 30px;
+  .human img.fotoo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #fce48e; /* Легкий жовтий фон */
+    padding: 5px;
+  }
+  
+  .lapku {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    cursor: pointer;
   }
+  
+  .lapku img.img_text {
+    width: 100%;
+    height: auto;
+  }
+  
+  .review-text {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+
 /* Main */
