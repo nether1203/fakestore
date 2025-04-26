@@ -7,6 +7,7 @@ const womensClothing = document.querySelector('.womensClothing');
 const productContent = document.querySelectorAll('.productContainer');
 
 const filterBtn = document.querySelectorAll('.filterBtn');
+const select = document.querySelector('#select');
 
 fetch('https://fakestoreapi.com/products')
   .then(response => response.json())
@@ -77,6 +78,10 @@ fetch('https://fakestoreapi.com/products')
           console.log(product);
           filters(product)
         })
+    })
+
+    select.addEventListener('change', () => {
+      filters(select.value)
     })
 
     function filters(product) {
