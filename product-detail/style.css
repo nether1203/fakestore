@@ -358,8 +358,20 @@
 /* Modal window */
 
 .product_modal {
+   position: fixed;
+   padding: 5px;
+   background: #ffffff;
+   width: 90%;
+   max-width: 100%;
+   min-height: 150px;
+   transform: translate(-50%, -50%);
+   top:50%;
+   left: 50%;
+   opacity: 1;
+   z-index: 99;
    background-color: #F1F1F3;
    border-radius: 15px;
+   display: none;
 }
 .modal_block {
 
@@ -444,4 +456,8 @@
 .sum {
 }
 .purche_button {
+}
+
+.product_modal.active{
+   display: block;
 }
