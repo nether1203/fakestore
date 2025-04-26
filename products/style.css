@@ -268,19 +268,23 @@ a{
 
 
 
-.sliderContainer{
+/* .sliderContainer{
    overflow: hidden;
    margin-bottom: 50px;
-}
+} */
 
 
 
 
-.sliderItem h2{
+.sliderItem h2, .swiper-slide h2{
    color: #333;
    font-size: 24px;
    font-weight: 600;
    line-height: 36px;
+}
+.swiper-slide{
+   position: relative;
+   height: 459px;
 }
 
 .description{
@@ -290,29 +294,24 @@ a{
    margin-bottom: 50px;
 }
 
-.productContainer:not(:last-child){
-   margin-bottom: 80px;
-}
+
 
 .cliderTrack{
   display: flex;
-   /*  justify-content: center;
-   gap: 50px; */
-   gap: 10px;
-   transition: 2s;
-
-
-
+   gap: 40px;
+   justify-content: center;
 }
 .productImg {
-   /* width: 376px; */
+   
    height: 317px;
+}
+.jeweleryImg{
+   width: 376px;
 }
 .basket {
    position: absolute;
-   left: 80%;
-   top: 80%;
-   min-width: 56px;
+   left: 70%;
+   top: 59%;
 }
 .sliderItem{
    position: relative;
@@ -335,21 +334,121 @@ a{
    line-height: 27px;
 }
 
- /* @media screen and (max-width: 1440px) {
-   .productImg{
-      width: 275px;
+.swiper{
+   margin-bottom: 40px;
+}
+
+.swiperButtonBox {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+.swiper-button-prev, .swiper-button-next{
+   position: static;
+   width: 50px;
+   height: 50px;
+   background-color: #000;
+   border-radius: 50px;
+}
+.swiperButton:hover:not(.swiper-button-disabled){
+   background-color: #222121;
+   border: 1px solid #222121;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after{
+  font-size: 25px;
+  color: #fff;
+}
+
+.swiperButtonBox:first-child, .swiperButtonBox:nth-child(2){
+   display: none;
+}
+.swiper:first-child, .swiper:nth-child(2){
+   display: none;
+}
+
+
+@media screen and (max-width: 1860px) {
+   .cliderTrack{
+      gap: 20px;
+      justify-content: flex-start;
    }
-   .productContent{
-      height: 465px;
-      
+}
+@media screen and (max-width: 1714px) {
+   .sliderItem{
+      width: 284px;
    }
-   .productContentBotton h3{
-      height: 100px;
+   .cliderTrack{
+      gap: 50px;
+      justify-content: space-around;
+   }
+   .basket{
+      top: 85%;
    }
 }
 
-@media screen and (max-width: 1420px) {
-   .productBox{
-      gap: 19px;
+@media screen and (max-width: 1440px) {
+   .cliderTrack{
+      display: none;
    }
-} */
+   .productContentBotton h3{
+      height: 100px;
+
+   }
+   .basket{
+      width: 56px;
+   }
+   .swiperButtonBox{
+      display: flex;
+   }
+   .swiper{
+      display: block;
+   }
+
+}
+@media screen and (max-width: 1149px) {
+   .productContentBotton h3{
+      font-size: 16px;
+   }
+   .basket{
+      left: 45%;
+      top: 88%;
+   }
+}
+@media screen and (max-width: 1340px) {
+   .jeweleryImg{
+      width: 280px;
+   }
+}
+@media screen and (max-width: 1140px) {
+
+}
+
+@media screen and (max-width: 639px) {
+   .productContentTop{
+      display: flex;
+      justify-content: center;
+   }
+   .productContentBotton{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .productContentBotton h3{
+      text-align: center;
+   }
+   .basket{
+      display: none;
+   }
+}
+
+@media screen and (max-width: 375px) {
+   .swiper-button-prev, .swiper-button-next{
+      width: 35px;
+      height: 35px;
+   }
+   
+   .swiper-button-next::after, .swiper-button-prev::after{
+     font-size: 15px;
+   }   
+}
