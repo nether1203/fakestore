@@ -461,3 +461,11 @@
 .product_modal.active{
    display: block;
 }
+.cross{
+   position: absolute;
+   height: 20px;
+   width: 20px;
+   top: 15px;
+   right: 15px;
+   cursor: pointer;
+}
