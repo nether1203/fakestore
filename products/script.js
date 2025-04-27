@@ -5,12 +5,7 @@ console.log(width);
 const cliderTrack = document.querySelectorAll('.cliderTrack');
 
 const swiperWrapper = document.querySelectorAll('.swiper-wrapper');
-const productBox = document.querySelector('.productBox');
-const jewelery = document.querySelector('.jewelery');
-const mensClothing = document.querySelector('.mensClothing');
-const electronics = document.querySelector('.electronics');
-const womensClothing = document.querySelector('.womensClothing');
-const productContent = document.querySelectorAll('.productContainer');
+const productContainer = document.querySelectorAll('.productContainer');
 
 const filterBtn = document.querySelectorAll('.filterBtn');
 const select = document.querySelector('#select');
@@ -26,88 +21,83 @@ fetch('https://fakestoreapi.com/products')
     data.forEach(item => {
         if (item.category == "men's clothing") {
           if (width <= 1440) {
-            swiperWrapper[0].innerHTML += `
-            <a href="/product-detail/index.html?id=${item.id}" class="swiper-slide">
-                <div >
-                    <div class="productContentTop">
-                        <img src="${item.image}" alt="" class="productImg">
-                    </div>
-                    <img src="../src/img/Button.png" alt="" class="basket">
-                    <div class="productContentBotton">
-                        <h3>${item.title}</h3>
-                        <p>$${item.price}</p>
-                    </div>
-                </div>
-            </a>
-            `
+            elemetsFun(swiperWrapper, 'swiper-slide', item, 0)
           } else {
-            cliderTrack[0].innerHTML += `
-            <a href="/product-detail/index.html?id=${item.id}" class="sliderItem">
-                <div >
-                    <div class="productContentTop">
-                        <img src="${item.image}" alt="" class="productImg">
-                    </div>
-                    <img src="../src/img/Button.png" alt="" class="basket">
-                    <div class="productContentBotton">
-                        <h3>${item.title}</h3>
-                        <p>$${item.price}</p>
-                    </div>
-                </div>
-            </a>
-            `
+            elemetsFun(cliderTrack, 'sliderItem', item, 0)
           }
         } else if(item.category == "jewelery") {
           if (width <= 1440) {
-            swiperWrapper[1].innerHTML += `
-            <a href="/product-detail/index.html?id=${item.id}" class="swiper-slide">
-                <div >
-                    <div class="productContentTop">
-                        <img src="${item.image}" alt="" class="productImg jeweleryImg">
-                    </div>
-                    <img src="../src/img/Button.png" alt="" class="basket">
-                    <div class="productContentBotton">
-                        <h3>${item.title}</h3>
-                        <p>$${item.price}</p>
-                    </div>
-                </div>
-            </a>
-            `
+            elemetsFun(swiperWrapper, 'swiper-slide', item, 1)
           } else {
-            cliderTrack[1].innerHTML += `
-            <a href="/product-detail/index.html?id=${item.id}" class="sliderItem">
-                <div>
-                    <div class="productContentTop">
-                        <img src="${item.image}" alt="" class="productImg jeweleryImg">
-                    </div>
-                    <img src="../src/img/Button.png" alt="" class="basket">
-                    <div class="productContentBotton">
-                        <h3>${item.title}</h3>
-                        <p>$${item.price}</p>
-                    </div>
-                </div>
-            </a>
-            `
+            elemetsFun(cliderTrack, 'sliderItem', item, 1)
           }
         } else if (item.category == "women's clothing") {
-          swiperWrapper[2].innerHTML += `
-            <a href="/product-detail/index.html?id=${item.id}" class="swiper-slide">
-                <div >
-                    <div class="productContentTop">
-                        <img src="${item.image}" alt="" class="productImg jeweleryImg">
-                    </div>
-                    <img src="../src/img/Button.png" alt="" class="basket">
-                    <div class="productContentBotton">
-                        <h3>${item.title}</h3>
-                        <p>$${item.price}</p>
-                    </div>
-                </div>
-            </a>
-            `
+          elemetsFun(swiperWrapper, 'swiper-slide', item, 2)
         }
     });
 
+    let product
+    document.querySelectorAll('[data-product]').forEach((name) =>{
+        name.addEventListener('click', function () {
+          product = name.getAttribute('data-product')
+          console.log(product);
+          filters(product)
+        })
+    })
+
+    select.addEventListener('change', () => {
+      filters(select.value)
+    })
+
+    function filters(product) {
+      if (product == 'all') {
+        for (let i = 0; i < productContainer.length; i++) {
+          productContainer[i].classList.remove('none')
+        }
+      } else {
+        for (let i = 0; i < productContainer.length; i++) {
+          productContainer[i].classList.add('none')
+        }
+        document.querySelector(`.${product}`).classList.remove('none')
+      }
+      filterBtn.forEach((item) =>{
+        item.addEventListener('click', () =>{
+          for (let i = 0; i < filterBtn.length; i++) {
+            filterBtn[i].classList.remove('activeFilter')
+          }
+          item.classList.add('activeFilter')
+        })
+      })
+    }
+
+    function elemetsFun(tag, tagclass, item, numbertag) {
+      tag[numbertag].innerHTML += `
+        <a href="/product-detail/index.html?id=${item.id}" class="${tagclass}">
+          <div>
+            <div class="productContentTop">
+                <img src="${item.image}" alt="" class="productImg jeweleryImg">
+            </div>
+            <img src="../src/img/Button.png" alt="" class="basket">
+            <div class="productContentBotton">
+                <h3>${item.title}</h3>
+                <p>$${item.price}</p>
+            </div>
+          </div>
+        </a>
+      `
+    }
 
     
+
+
+
+
+
+
+
+
+
+
   }
   let swiper1 = new Swiper(".mySwiper1", {
     slidesPerView: 1,
@@ -190,42 +180,7 @@ fetch('https://fakestoreapi.com/products')
   });
 
             
-            ` 
-        }
-            
-        
-    });
 
-    let product
-    document.querySelectorAll('[data-product]').forEach((name) =>{
-        name.addEventListener('click', function () {
-          product = name.getAttribute('data-product')
-          console.log(product);
-          filters(product)
-        })
-    })
-
-    select.addEventListener('change', () => {
-      filters(select.value)
-    })
-
-    function filters(product) {
-      if (product == 'all') {
-        for (let i = 0; i < productContent.length; i++) {
-          productContent[i].classList.remove('none')
-        }
-      } else {
-        for (let i = 0; i < productContent.length; i++) {
-          productContent[i].classList.add('none')
-        }
-        document.querySelector(`.${product}`).classList.remove('none')
-      }
-      filterBtn.forEach((item) =>{
-        item.classList.remove('activeFilter')
-        item.addEventListener('click', () =>{
-          item.classList.add('activeFilter')
-        })
-      })
-    }
-  }
+  
+    
 

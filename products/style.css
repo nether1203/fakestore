@@ -303,6 +303,9 @@ a{
    gap: 70px;
    /* justify-content: center; */
 }
+.cliderTrack{
+   margin-bottom: 80px;
+}
 .productImg {
    
    height: 317px;
