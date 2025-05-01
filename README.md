@@ -13,13 +13,14 @@ This project was developed by:
 
 # Pages
 
-## Main page 
-Autor: **[Name]**
-Description: Головна стоінка інтернет магазину
+## Product page 
+Autor: **[Maks]**
+Description: Сторінка про товар
 ### What was done:
-- Header
-- Slider
-- Footer
-- Api resive data
+- Main structur and styles for page of product
+- Getting information about product from API
+- Main structur and styles for modal window
+- Getting information about cart and user from API for modal window
+- Adaptation
 
 
