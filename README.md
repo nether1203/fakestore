@@ -19,8 +19,12 @@ Description: Сторінка про товар
 ### What was done:
 - Main structur and styles for page of product
 - Getting information about product from API
+- Adaptation
+
+## Modal window
+Autor: **[Maks]**
+Description: Модальне вікно корзини
+### What was done:
 - Main structur and styles for modal window
 - Getting information about cart and user from API for modal window
 - Adaptation
-
-
