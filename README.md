@@ -8,3 +8,13 @@ This project was developed by:
 - [**[Marko]**](https://github.com/MarcelloTar) – Frontend development  
 - [**[Maks]**](https://github.com/BONBINOVNCH) – Frontend development (API)  
 - [**[Tanya]**](https://github.com/TanzerCIJI) – Frontend development  
+
+
+Autor: [**[Marko]**](https://github.com/MarcelloTar) Description: зробив сторінку де є категорія товарів 
+What was done:
+    - заголок
+    - фільтер
+    - категорії товару
+    - картка товару
+    - слайдер
+    
