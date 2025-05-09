@@ -9,7 +9,8 @@ This project was developed by:
 - [**[Maks]**](https://github.com/BONBINOVNCH) – Frontend development (API)  
 - [**[Tanya]**](https://github.com/TanzerCIJI) – Frontend development  
 - [**[Maksym]**](https://github.com/MaksimKopis) – Frontend development 
-- [**[Nazar]**](https://github.com/nether1203) - Frontend development
+- [**[Nazar]**](https://github.com/nether1203) – Frontend development 
+
 
 # Pages
 
@@ -23,8 +24,10 @@ Description: Головна стоінка інтернет магазину
 - Api resive data
 
 
+
 ## Main page (Question Box)
 Autor: **[Maksym]**
 Description: Головна стоінка інтернет магазину
 ### What was done:
 Я зробив блок з запитанням. Де ви можете задати запитання!
+
