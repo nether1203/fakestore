@@ -1,3 +1,0 @@
-[submodule "fakestore"]
-	path = fakestore
-	url = https://github.com/YuraKhalus/fakestore.git
