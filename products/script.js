@@ -1,4 +1,3 @@
-
 const width = screen.width
 console.log(width);
 
@@ -178,9 +177,4 @@ fetch('https://fakestoreapi.com/products')
       }
     },
   });
-
-            
-
-  
-    
 
