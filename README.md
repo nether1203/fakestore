@@ -1,6 +1,8 @@
 # fakestore
 A team project of the Creator IT Academy students, an online store using Fake Store API
 
+![screen of main page](./src/img/readme/mainPage.png)
+
 ## Contributors
 This project was developed by:
 - [**[Name]**](https://github.com/username1) – Frontend development  
