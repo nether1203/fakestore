@@ -9,6 +9,7 @@ This project was developed by:
 - [**[Maks]**](https://github.com/BONBINOVNCH) – Frontend development (API)  
 - [**[Tanya]**](https://github.com/TanzerCIJI) – Frontend development  
 - [**[Maksym]**](https://github.com/MaksimKopis) – Frontend development 
+- [**[Nazar]**](https://github.com/nether1203) – Frontend development 
 
 
 # Pages
@@ -21,6 +22,7 @@ Description: Сторінка про товар
 - Getting information about product from API
 - Adaptation
 
+
 ## Modal window
 Autor: **[Maks]**
 Description: Модальне вікно корзини
@@ -28,3 +30,12 @@ Description: Модальне вікно корзини
 - Main structur and styles for modal window
 - Getting information about cart and user from API for modal window
 - Adaptation
+
+
+## Main page (Question Box)
+Autor: **[Maksym]**
+Description: Головна стоінка інтернет магазину
+### What was done:
+Я зробив блок з запитанням. Де ви можете задати запитання!
+
+
