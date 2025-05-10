@@ -14,14 +14,15 @@ This project was developed by:
 
 # Pages
 
-## Main page 
-Autor: **[Name]**
-Description: Головна стоінка інтернет магазину
+## Product page 
+Autor: **[Maks]**
+Description: Сторінка про товар
 ### What was done:
-- Header
-- Slider
-- Footer
-- Api resive data
+- Main structur and styles for page of product
+- Getting information about product from API
+- Adaptation
+
+
 
 ## Page with all products
 Autor: [**[Marko]**](https://github.com/MarcelloTar) Description: зробив сторінку де є категорія товарів 
@@ -32,8 +33,18 @@ What was done:
     - картка товару
     - слайдер
 
+## Modal window
+Autor: **[Maks]**
+Description: Модальне вікно корзини
+### What was done:
+- Main structur and styles for modal window
+- Getting information about cart and user from API for modal window
+- Adaptation
+
+
 ## Main page (Question Box)
 Autor: **[Maksym]**
 Description: Головна стоінка інтернет магазину
 ### What was done:
 Я зробив блок з запитанням. Де ви можете задати запитання!
+
