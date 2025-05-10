@@ -25,6 +25,16 @@ Description: Сторінка про товар
 - Adaptation
 
 
+
+## Page with all products
+Autor: [**[Marko]**](https://github.com/MarcelloTar) Description: зробив сторінку де є категорія товарів 
+What was done:
+    - заголок
+    - фільтер
+    - категорії товару
+    - картка товару
+    - слайдер
+
 ## Modal window
 Autor: **[Maks]**
 Description: Модальне вікно корзини
@@ -39,5 +49,4 @@ Autor: **[Maksym]**
 Description: Головна стоінка інтернет магазину
 ### What was done:
 Я зробив блок з запитанням. Де ви можете задати запитання!
-
 
