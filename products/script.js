@@ -98,65 +98,16 @@ fetch('https://fakestoreapi.com/products')
 
 
   }
-  let swiper1 = new Swiper(".mySwiper1", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".swiper1-next",
-      prevEl: ".swiper1-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: false,
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      1050: {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
-      1441: {
-        slidesPerView: 4,
-        spaceBetween: 50,
-      }
-    },
-  });
-  let swiper2 = new Swiper(".mySwiper2", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".swiper2-next",
-      prevEl: ".swiper2-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: false,
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      1050: {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
-      1441: {
-        slidesPerView: 4,
-        spaceBetween: 50,
-      }
-    },
-  });
 
-  let swiper3 = new Swiper(".mySwiper3", {
+
+
+  function initSwiper(swiperClass, nextEl, prevEl) {
+  return new Swiper(swiperClass, {
     slidesPerView: 1,
     spaceBetween: 10,
     navigation: {
-      nextEl: ".swiper3-next",
-      prevEl: ".swiper3-prev",
+      nextEl,
+      prevEl,
     },
     pagination: {
       el: ".swiper-pagination",
@@ -176,5 +127,8 @@ fetch('https://fakestoreapi.com/products')
         spaceBetween: 50,
       }
     },
-  });
-
+  })
+}
+let swiper1 = initSwiper(".mySwiper1", ".swiper1-next", ".swiper1-prev");
+let swiper2 = initSwiper(".mySwiper2", ".swiper2-next", ".swiper2-prev");
+let swiper3 = initSwiper(".mySwiper3", ".swiper3-next", ".swiper3-prev");
