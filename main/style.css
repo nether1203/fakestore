@@ -677,3 +677,94 @@ border-radius: 20px;
   }
 }
 
+.testimonials {
+  padding: 40px 20px;
+}
+
+.testimonials-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.view-all-btn {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn.yellow {
+  background-color: #FFD700;
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Адаптивність */
+@media (max-width: 992px) {
+  .testimonial-cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 26px;
+  }
+
+  .testimonial-card {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .btn.yellow {
+    width: 100%;
+    padding: 12px 0;
+  }
+}
