@@ -9,6 +9,9 @@
    width: 90%;
    margin: auto;
 }
+.main{
+   margin-top: 167px;
+}
 .headerNavbar{
    display: flex;
    height: 95px;
@@ -54,4 +57,421 @@
    border-radius: 100%
 }
 
-/* Main */
+
+.container2{
+   /* margin: 0 92px; */
+}
+a{
+   text-decoration: none;
+}
+.headerContainer{
+   display: flex;
+   align-items: center;
+   margin-bottom: 80px;
+   /* justify-content: flex-start; */
+}
+.headerLeft p{
+   color: #656567;
+   font-size: 18px;
+   line-height: 27px;
+   /* width: 40%; */
+}
+.headerLeft{
+   width: 40%;
+   margin-right: 90px;
+}
+
+.Discover {
+   display: flex;
+   margin-bottom: 36px;
+}
+
+.Discover h1{
+   color: #1a1a1a;
+   font-size: 48px;
+   font-weight: 600;
+   text-transform: uppercase;
+   margin-right: 7px;
+}
+.Discover p{
+   color: #98989a;
+   font-weight: 600;
+   text-transform: uppercase;
+   margin-top: 10px;
+   width: max-content;
+}
+.headerRightContainer{
+   display: flex;   
+}
+.headerRightBox:not(:last-child) {
+   margin-right: 60px;
+}
+.headerRightContainerHeader {
+   color: #262626;
+   font-size: 24px;
+   font-weight: 600;
+   line-height: 27px;
+   margin-bottom: 10px;
+}
+.headerRightContainerText {
+   color: #656567;
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 21px;
+}
+
+.filterBox {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   margin-bottom: 80px;
+}
+.filterBtn {
+   border: none;
+   color: #4c4c4d;
+   font-size: 18px;
+   font-weight: 500;
+   text-transform: uppercase;
+   border-radius: 100px;
+   padding: 0 20px;
+   background-color: #f7f7f8;
+   cursor: pointer;
+   transition: background-color 500ms;
+   height: 53px;
+}
+.filterBtn:hover:not(.activeFilter){
+   background-color: #d3d3d6;
+}
+.activeFilter {
+   color: #262626;
+   font-weight: 600;
+   background-color: #ffd400;
+}
+
+#select{
+   margin-left: 10px;
+   padding-left: 5px;
+}
+
+.filterBoxMedia{
+   display: none;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1490px) {
+   .headerRightBox:not(:last-child) {
+      margin-right: 30px;
+   }
+}
+@media screen and (max-width: 1380px) {
+   .headerLeft{
+      margin-right: 50px;
+   }
+}
+@media screen and (max-width: 1305px) {
+   .Discover{
+      margin-bottom: 24px;
+   }
+   .Discover h1{
+      font-size: 38px;
+   }
+   .headerLeft p{
+      font-size: 14px;
+   }
+   .Discover p{
+      font-size: 14px;
+   }
+   .headerRightContainerHeader{
+      font-size: 18px;
+   }
+   .headerRightContainerText{
+      font-size: 14px;
+   }
+   .headerLeft{
+      width: 45%;
+   }
+}
+@media screen and (max-width: 1070px) {
+   .headerLeft{
+      width: 50%;
+   }
+}
+@media screen and (max-width: 1047px) {
+   .headerRightContainerHeader{
+      width: 105%;
+   }
+}
+@media screen and (max-width: 985px) {
+   .headerContainer{
+      display: block;
+   }
+   .headerLeft{
+      margin-right: 0px;
+      margin-bottom: 30px;
+      width: 100%;
+   }
+}
+@media screen and (max-width: 627px) {
+   .filterBtn{
+      display: none;
+   }
+   .filterBoxMedia{
+      display: flex;
+   }
+}
+@media screen and (max-width: 502px) {
+   .headerRightContainerHeader{
+      font-size: 16px;
+   }
+   .headerRightBox:not(:last-child){
+      margin-right: 20px;
+   }
+}
+@media screen and (max-width: 433px) {
+   .headerRightContainer{
+      flex-wrap: wrap;
+   }
+   .headerRightBox:first-child{
+      margin-bottom: 15px;
+   }
+}
+@media screen and (max-width: 425px) {
+   .Discover{
+      flex-direction: column-reverse;
+   }
+   .Discover h1{
+      font-size: 28px;
+   }
+   .Discover p{
+      margin-top: 0px;
+   }
+}
+@media screen and (max-width: 366px) {
+   .headerRightBox:nth-child(2){
+      margin-bottom: 15px;
+   }
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .sliderContainer{
+   overflow: hidden;
+   margin-bottom: 50px;
+} */
+
+
+
+
+.sliderItem h2, .swiper-slide h2{
+   color: #333;
+   font-size: 24px;
+   font-weight: 600;
+   line-height: 36px;
+}
+.swiper-slide{
+   position: relative;
+   height: 459px;
+}
+
+.description{
+   color: #656567;
+   font-size: 18px;
+   line-height: 27px;
+   margin-bottom: 50px;
+}
+
+.productContainer h2{
+   margin-bottom: 6px;
+}
+
+.cliderTrack{
+  display: flex;
+   gap: 70px;
+   /* justify-content: center; */
+}
+.cliderTrack{
+   margin-bottom: 80px;
+}
+.productImg {
+   
+   height: 317px;
+}
+.jeweleryImg{
+   width: 376px;
+}
+.basket {
+   position: absolute;
+   left: 70%;
+   top: 59%;
+}
+.sliderItem{
+   position: relative;
+   /* border: 1px solid #1a1a1a; */
+   /* width: 390px; */
+   height: 459px;
+}
+.productContentBotton h3{
+   color: #262626;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 30px;
+   width: 75%;
+   height: 100px;
+}
+.productContentBotton p{
+   color: #262626;
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 27px;
+}
+.womensClothing{
+   overflow: hidden;
+}
+
+.none{
+   display: none;
+}
+
+.swiper{
+   margin-bottom: 40px;
+}
+
+.swiperButtonBox {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   margin-bottom: 80px;
+}
+.swiper-button-prev, .swiper-button-next{
+   position: static;
+   width: 50px;
+   height: 50px;
+   background-color: #000;
+   border-radius: 50px;
+}
+.swiperButton:hover:not(.swiper-button-disabled){
+   background-color: #222121;
+   border: 1px solid #222121;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after{
+  font-size: 25px;
+  color: #fff;
+}
+
+.swiperButtonBox:first-child, .swiperButtonBox:nth-child(2){
+   display: none;
+}
+.swiper:first-child, .swiper:nth-child(2){
+   display: none;
+}
+
+
+@media screen and (max-width: 1860px) {
+   .cliderTrack{
+      gap: 20px;
+      justify-content: flex-start;
+   }
+}
+@media screen and (max-width: 1714px) {
+   .sliderItem{
+      width: 284px;
+   }
+   .cliderTrack{
+      gap: 50px;
+      justify-content: space-around;
+   }
+   .basket{
+      top: 85%;
+   }
+}
+
+
+
+@media screen and (max-width: 1440px) {
+   .cliderTrack{
+      display: none;
+   }
+   .productContentBotton h3{
+      height: 100px;
+
+   }
+   .basket{
+      width: 56px;
+   }
+   .swiperButtonBox{
+      display: flex;
+   }
+   .swiper{
+      display: block;
+   }
+
+}
+@media screen and (max-width: 1149px) {
+   .productContentBotton h3{
+      font-size: 16px;
+   }
+   .basket{
+      left: 45%;
+      top: 88%;
+   }
+}
+@media screen and (max-width: 1340px) {
+   .jeweleryImg{
+      width: 280px;
+   }
+}
+@media screen and (max-width: 1140px) {
+
+}
+
+@media screen and (max-width: 639px) {
+   .productContentTop{
+      display: flex;
+      justify-content: center;
+   }
+   .productContentBotton{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .productContentBotton h3{
+      text-align: center;
+   }
+   .basket{
+      display: none;
+   }
+}
+
+@media screen and (max-width: 375px) {
+   .swiper-button-prev, .swiper-button-next{
+      width: 35px;
+      height: 35px;
+   }
+   
+   .swiper-button-next::after, .swiper-button-prev::after{
+     font-size: 15px;
+   }   
+}
+
+@media screen and (max-width: 1200px) {
+   .productBox{
+      flex-wrap: wrap;
+   }
+}
+
