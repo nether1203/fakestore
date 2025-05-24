@@ -1,7 +1,7 @@
 # fakestore
 A team project of the Creator IT Academy students, an online store using Fake Store API
 
-![screen of main page](./src/img/readme/mainPage.png)
+![screen of main page](https://raw.githubusercontent.com/nether1203/fakestore/main/src/img/readme/mainPage.png)
 
 ## Contributors
 This project was developed by:
